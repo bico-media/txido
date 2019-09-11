@@ -11,7 +11,7 @@ A "Normal" reference to a transaction ID:
 Starting with the transaction ID a txido is constructed by indication of a specific output by 
 
 - First, concatenate the decimal number for the index of the output (0 indexed) 
-- secondary concatenate the result of `(n - 1) % 9 + 1` where n is the output index. 
+- secondary concatenate the result of `n % 9` (n modulus 9) where n is the output index. 
 
 Txido reference to the 2nd output (index 1)
 
@@ -25,7 +25,7 @@ Txido reference to the 16th output (index 15)
 
     a3907e5b910f798c8d0fb450d483a0aefa5ce40ac74064b377603e5ea51deccb156
 
-**Please note that**
+**Please note**
 
 - The first output (index 0) must always be referenced with the original transaction ID. An indication of the first output (by adding `00`) is therefore always invalid. 
 
