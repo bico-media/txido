@@ -27,7 +27,7 @@ Txido reference to the 16th output (index 15)
 
 **Please note that**
 
-- The first output (index 0) must always be referenced with the original transaction ID. An indication of the first output (by adding ´00´) is therefore always invalid. 
+- The first output (index 0) must always be referenced with the original transaction ID. An indication of the first output (by adding `00`) is therefore always invalid. 
 
 - Output index must be larger than 0 and no larger than 2147483647
 
